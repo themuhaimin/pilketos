@@ -64,7 +64,7 @@ class Admin_model extends CI_Model {
 	 public function rekap()
     {
         $sql = $sql=$this->db->query("SELECT id_calon as id,nama,kelas.kelas,(SELECT COUNT(hasil) AS OrdersFromCustomerID7 FROM hasil
-				WHERE hasil=id) as hasil  FROM `calon` LEFT JOIN `kelas` ON `kelas`.`id_kelas`=`calon`.`kelas");
+				WHERE hasil=id) as hasil FROM `calon` LEFT JOIN `kelas` ON `kelas`.`id_kelas`=`calon`.kelas");
         return $sql->result();
     }
 	 public function buat_tabel($data)

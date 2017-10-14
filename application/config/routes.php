@@ -43,21 +43,9 @@ $route['default_controller'] = "login";
 
 //$route['404_override'] = '';
 $route['404_override'] = 'error404';
-
-// Siswa Paging
-$route['siswa/halaman'] = "siswa/index";
-$route['siswa/halaman/(:num)'] = "siswa/index/$1";
-// Absen Paging
-$route['guru/halaman'] = "guru/index";
-$route['guru/halaman/(:num)'] = "guru/index/$1";
-// Ujian Paging
-$route['ujian/halaman'] = "ujian/index";
-$route['ujian/halaman/(:num)'] = "ujian/index/$1";
-// siswa Paging
-$route['kelola_rombel/'] = "kelola_rombel/index";
-$route['kelola_rombel/halaman/(:num)'] = "kelola_rombel/halaman/$1";
  //login admin
 $route['administrator'] = "admin_login/index";
+$route['admin'] = "admin/rekap";
 
 $route['admin/logout'] = "admin_login/logout";
 $route['administrator/logout'] = "admin_login/logout";
